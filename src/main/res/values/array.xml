@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_sync_entries">
+        <item>Automatic</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="pref_sync_values">
+        <item>Automatic</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="pref_sync_interval_entries">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>5 hours</item>
+        <item>6 hours</item>
+        <item>7 hours</item>
+        <item>8 hours</item>
+        <item>9 hours</item>
+        <item>10 hours</item>
+        <item>11 hours</item>
+        <item>12 hours</item>
+    </string-array>
+
+
+</resources>

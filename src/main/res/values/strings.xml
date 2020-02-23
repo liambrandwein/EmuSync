@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Final Emu Cloud</string>
+
+    <string name="pref_sync_default">Manual</string>
+    <string name="pref_sync_message">Select sync type</string>
+
+    <string name="default_directory">/storage/emulated/0</string>
+</resources>

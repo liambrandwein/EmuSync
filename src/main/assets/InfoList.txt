@@ -1,0 +1,4 @@
+org.mupen64plusae.v3.fzurita,/storage/emulated/0/mupen64plus-fz/GameData,/storage/emulated/0/mupen64plus-fz
+com.dsemu.drastic,/storage/emulated/0/DraStic/backup,/storage/emulated/0/DraStic/savestates
+org.dolphinemu.dolphinemu,/storage/emulated/0/dolphin-emu/GC,/storage/emulated/0/dolphin-emu/Wii/title/00010000
+com.emu.gba1x,/storage/emulated/0/emulators/GBA/save,/storage/emulated/0/emulators/GBA/state

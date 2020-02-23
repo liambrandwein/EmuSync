@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/add_emulator_button"
+        android:icon="@drawable/ic_add"
+        android:title="Add emulator"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/refresh_button"
+        android:icon="@drawable/ic_refresh"
+        android:title="Refresh"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/global_settings_button"
+        android:icon="@drawable/ic_settings_white"
+        android:title="Settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>

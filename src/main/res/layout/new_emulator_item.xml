@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="14dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/new_emulator_item_top"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/image_view_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/image_view_icon"
+                android:paddingTop="7dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="35dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+            <ImageView
+                android:id="@+id/image_view_end_gear"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_settings_small"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_backup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/dummy_view"
+                android:layout_alignParentStart="true"
+                android:text="Backup"
+                android:background="@drawable/new_emulator_item_left"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
+            <Button
+                android:id="@+id/button_restore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/dummy_view"
+                android:layout_alignParentEnd="true"
+                android:text="Restore"
+                android:background="@drawable/new_emulator_item_right"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
+            <View
+                android:id="@+id/dummy_view"
+                android:layout_width="1dp"
+                android:layout_height="@+id/button_restore"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

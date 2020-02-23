@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddEditEmulatorActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emulator name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edit_text_directory1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Main directory"
+        android:inputType="text"
+        android:paddingTop="32dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_directory1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync directory contents" />
+
+    <EditText
+        android:id="@+id/edit_text_directory2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Secondary directory (optional)"
+        android:paddingTop="32dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_directory2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync directory contents" />
+
+    <EditText
+        android:id="@+id/edit_text_packagename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Package name (optional)"
+        android:paddingTop="32dp"/>
+
+    <Switch
+        android:id="@+id/switch_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Automatically sync emulator data"
+        android:textSize="16dp"
+        android:paddingTop="32dp" />
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:id="@+id/button_delete_emulator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Emulator"
+        android:onClick="openDialog"/>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="General"
+        android:key="pref_general">
+
+        <ListPreference
+            android:title="Sync type"
+            android:key="pref_sync_setting"
+            android:defaultValue="@string/pref_sync_default"
+            android:entries="@array/pref_sync_entries"
+            android:entryValues="@array/pref_sync_values"
+            android:dialogTitle="@string/pref_sync_message"/>
+
+        <ListPreference
+            android:title="Sync interval"
+            android:key="pref_sync_interval"
+            android:defaultValue="@string/default_directory"
+            android:dialogTitle="Sync every..."
+            android:entries="@array/pref_sync_interval_entries"/>
+        <CheckBoxPreference
+            android:title="Show backup and restore warning"/>
+        <Preference
+            android:title="Tutorial"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Google"
+        android:key="pref_google">
+
+        <Preference
+            android:title="Switch account"
+            android:key="pref_switch_account"/>
+        <Preference
+            android:title="Rate EmuSync" />
+
+    </PreferenceCategory>
+
+
+
+</androidx.preference.PreferenceScreen>
